@@ -5,5 +5,8 @@ A forensics tool to aid Outlook email analysis. Enables headers analysis and sea
 In order to install all required dependencies please run:
 ```
 pip install -r requirements.txt 
-
 ```
+# Usage
+
+## Live Collection
+## Imported PST file
