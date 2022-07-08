@@ -69,7 +69,12 @@ It analyzed the Inbox folder and search the body of each message for the keyword
 ![alt text](https://github.com/filipposfwt/Mailinspector/blob/main/screenshots/results_analysis.png?raw=true)
 
 All attachments are saved in a folder on the same directory:
+
+
 ![alt text](https://github.com/filipposfwt/Mailinspector/blob/main/screenshots/attachments_folder.png?raw=true)
+
 ![alt text](https://github.com/filipposfwt/Mailinspector/blob/main/screenshots/attachments.png?raw=true)
-The results are outputted on the comman-line window as well as in the email_dump.txt which was specified:
+
+The results are written on the comman-line window as well as in the email_dump.txt which was specified:
+
 ![alt text](https://github.com/filipposfwt/Mailinspector/blob/main/screenshots/email_dump.png?raw=true)
