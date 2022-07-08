@@ -67,3 +67,9 @@ python mail_inspector.py -f 0 -b click,money -a docx,pdf -o email_dump.txt
 It analyzed the Inbox folder and search the body of each message for the keywords "click" and "money" and the attachments for "docx" or "pdf" in their name. We also specified a text file to save the results for each message. In the following picture, the results for a message are shown:
 
 ![alt text](https://github.com/filipposfwt/Mailinspector/blob/main/screenshots/results_analysis.png?raw=true)
+
+All attachments are saved in a folder on the same directory:
+![alt text](https://github.com/filipposfwt/Mailinspector/blob/main/screenshots/attachments_folder.png?raw=true)
+![alt text](https://github.com/filipposfwt/Mailinspector/blob/main/screenshots/attachments.png?raw=true)
+The results are outputted on the comman-line window as well as in the email_dump.txt which was specified:
+![alt text](https://github.com/filipposfwt/Mailinspector/blob/main/screenshots/email_dump.png?raw=true)
