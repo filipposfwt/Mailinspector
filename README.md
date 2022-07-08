@@ -1,2 +1,2 @@
 # MailInspector
-A forensics tool to aid Outlook email analysis. Enables headers analysis and search for suspicious content in the email body or attached documents. Attachments are saved for further investigation. The tool can be used offline by specifying a pst file or for live collection by omitting it.
+A forensics tool to aid Outlook email analysis. Enables headers analysis and search for suspicious content in the email body or attached documents. The tool can be used for live collection of the emails on a running machine with Outlook installed or can be used for offline analysis by providind a PST file as input. While in live collection, attachments are saved for further investigation.
