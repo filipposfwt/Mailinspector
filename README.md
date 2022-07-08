@@ -1,5 +1,5 @@
 # MailInspector
-A forensics tool to aid Outlook email analysis. Enables headers analysis and search for suspicious content in the email body or attached documents. The tool can be used for live collection of the emails on a running machine with Outlook installed or for offline analysis by providind a PST(Personal Storage Table) file as input. While in live collection, the keyword search is done only on the filename and attachments are saved for further investigation.
+A command-line forensics tool to aid Outlook email analysis. Enables headers analysis and search for suspicious content in the email body or attached documents. The tool can be used for live collection of the emails on a running machine with Outlook installed or for offline analysis by providind a PST(Personal Storage Table) file as input. While in live collection, the keyword search is done only on the filename and attachments are saved for further investigation.
 
 # Install 
 In order to install all required dependencies please run:
@@ -7,6 +7,51 @@ In order to install all required dependencies please run:
 pip install -r requirements.txt 
 ```
 # Usage
+To view the available options, one can run:
+```
+python mail_inspector.py -h
+```
+
+```      
+        ..--""|
+        |     |
+        | .---'                                _  _   _                                 _               
+  (\-.--| |---------.                         (_)| | (_)                               | |              
+ / \) \ | |          \       _ __ ___    __ _  _ | |  _  _ __   ___  _ __    ___   ___ | |_  ___   _ __ 
+ |:.  | | |           |     | '_ ` _ \  / _` || || | | || '_ \ / __|| '_ \  / _ \ / __|| __|/ _ \ | '__|
+ |:.  | |o|           |     | | | | | || (_| || || | | || | | |\__ \| |_) ||  __/| (__ | |_| (_) || |   
+ |:.  | `"`           |     |_| |_| |_| \__,_||_||_| |_||_| |_||___/| .__/  \___| \___| \__|\___/ |_|   
+ |:.  |_ __  __ _  __ /                                             | |
+         |=`|                                                       |_|
+         |=_|
+                 
+A forensics tool to aid Outlook email analysis. Enables headers analysis and search for suspicious content in the email body or attached documents.
+Attachments are saved for further investigation. The tool can be used offline by specifying a pst file or for live collection by omitting it.
+
+Usage: mailinspector.py [options]
+
+OPTIONS
+
+-f, --folder <0 or 1>:
+	 Specify which folder to search, 0 corresponds to Inbox and 1 to Junk. Default is set to Inbox.
+
+-b, --bkeyword <body search keyword>:
+	 Specify a keyword to search in the body and attachments of emails
+
+-a, --akeyword <attachment search keyword> :
+	Specify a keyword to search in the email body. The tool can be used as a live response tool. It is fetching
+	emails direcly by using the Outlook API (MAPI).
+
+-l, --links:
+	 Use this flag to display URLs found inside an email.
+-o, --output:
+	 Specify an output file to save the results.
+-pst, <filename>
+
+	 Specify a .pst backup file to analyze. Without this option the tool performs a live collection from outlook api.
+```
+
+
 
 ## Live Collection
 In order to use the tool for live collection is should be run in a computer with Outlook application installed. The input (-i) flag should be ommitted. In this mode the user can choose to analyze Inbox or Junk by defining the -f flag (0 corresponds to Inbox and 1 to Junk).
