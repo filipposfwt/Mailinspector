@@ -46,7 +46,7 @@ OPTIONS
 	 Use this flag to display URLs found inside an email.
 -o, --output:
 	 Specify an output file to save the results.
--pst, <filename>
+-i, <input>
 
 	 Specify a .pst backup file to analyze. Without this option the tool performs a live collection from outlook api.
 ```
