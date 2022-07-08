@@ -58,3 +58,11 @@ In order to use the tool for live collection is should be run in a computer with
 
 ## Imported PST file
 To use the tool for offline analysis the user should provide a PST file by using the -i flag. In this mode the analysis can only be done in the Inbox folder.
+
+# Example 
+In the following example the tool was used in live collection mode by running:
+```
+-f 0 -b click,money -a docx,pdf -o email_dump.txt
+```
+It analyzed the Inbox folder and search the body of each message for the keywords "click" and "money" and the attachments for "docx" or "pdf" in their name. We also specified a text file to save the results for each message. In the following picture, the results for a message are shown:
+
